@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>client/server javascript webSocket doodler</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://rawgit.com/intridea/sketch.js/gh-pages/lib/sketch.js"></script>  
+
+    <!-- <style> body {padding: 0; margin: 50;} canvas {vertical-align: top;} </style> -->
+
+
+  </head>
+  <body>
+  <center><b>"client/server javascript webSocket doodler"</b>
+  <p><a href="http://www.linkedin.com/in/daniel-leavy-339643AA/">by Daniel Leavy</a></center></p>
+
+ 
+
+  <p><b> ------------------------------------------------------MAP: only your own notes are viewed ------------------------------------------------------------------------------------------------------------------ CANVAS: client/server notes can be made ---------------------------------------------- </b></p>
+ 
+<p></p>   
+<div class="tools">
+  <a href="#tools_sketch" data-download="jpg">Download</a>
+  <a href="#tools_sketch" data-tool="marker">Marker</a>
+  <a href="#tools_sketch" data-tool="eraser">Eraser</a>
+  <b>::tools::for the map only ---------------------------------------------------------------------------------------------------------- <b style="color:rgb(0,0,255)"> your text appears blue : <b style="color:rgb(255,0,0)">other user text appears red</b>
+</div>
+<canvas id="tools_sketch" width="900" height="800" style="background: url(https://c5.staticflickr.com/6/5329/31019042476_835050cec1_o.jpg) no-repeat center center;"></canvas>
+<script type="text/javascript">
+  $(function() {
+    $('#tools_sketch').sketch({defaultColor: "#0000ff"});
+  });
+</script>
+
+  </body>
+</html>
